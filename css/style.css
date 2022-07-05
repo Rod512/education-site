@@ -543,7 +543,7 @@ footer ul li a:hover{
     }
 
     .courses_container{
-        grid-template-columns: 1fr ;
+        grid-template-columns:repeat( auto-fit, minmax(250px, 2fr));
     }
     /* responsive course end */
 
@@ -621,8 +621,8 @@ footer ul li a:hover{
         text-align: center;
     }
 
-    .footer_socials a{
-        text-align: center;
+    .footer_socials {
+       justify-content: center;
     }
 
     
