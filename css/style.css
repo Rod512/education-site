@@ -605,8 +605,15 @@ footer ul li a:hover{
         display: inline-block;
     }
 
+    .courses{
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
     .courses_container{
         grid-template-columns: 1fr;
+        margin: 0 auto;
     }
 
     .courses_info{
