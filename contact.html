@@ -12,6 +12,12 @@
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
+
+    <style>
+        body{
+            background-image: url(/images/bg-texture.png);
+        }
+    </style>
 </head>
 <body>
     <!-- navbar start -->
@@ -61,14 +67,14 @@
                     <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                 </ul>
             </aside>
-            <form class="contact_form">
+            <form action="https://formspree.io/f/mjvlqebr" method="POST" class="contact_form">
                 <div class="form_name">
-                    <input type="text" name="First Name" placeholder="First Name" required>
-                    <input type="text" name="Last Name" placeholder="Last Name" required>
+                    <input type="text" name="First Name" id="first_name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" id="last_name" placeholder="Last Name" required>
                 </div>
-                <input type="email" name="Email Address" placeholder="Your Email" required>
-                <textarea name="Massage" rows="7" placeholder="Massage" required></textarea>
-                <button type="submit" class="btn btn-primary">Send</button>
+                <input type="email" name="Email Address" id="email" placeholder="Your Email" required>
+                <textarea name="Massage" rows="7" placeholder="Massage" id="massage" required></textarea>
+                <button type="submit" id="Submit_btn" class="btn btn-primary">Send</button>
             </form>
 
 
@@ -134,11 +140,7 @@
         </div>
     </footer>
     <!-- footer end -->
-     
-
     <!-- custom js -->
     <script src="/js/script.js"></script>
-
-    
 </body>
 </html>
